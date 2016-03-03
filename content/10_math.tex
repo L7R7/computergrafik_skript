@@ -587,7 +587,7 @@ Die Elemente (Vektoren) aus $\mathbb{R}^n$ nennt man auch  Punkte in Abgrenzung 
 Für Punkte $P,Q \in \mathbb{R}^n$ ist also $\overline{PQ}$ ein Vektor, auch Verbindungsvektor genannt.
 
 \begin{Definition}
-Ist $B:= \{b_1, \hdots , b_n \}$ eine Basis des Vektorraums  $(\mathbb{R}^n, + , \cdot )$ und $P \in \mathbb{A}$ ein Punkt, so nennen wir das Tupel
+Ist $B:= \{b_1, \hdots , b_n \}$ eine Basis des Vektorraums  $(\mathbb{R}^n, + , \cdot )$ und $P \in \mathbb{A}^n$ ein Punkt, so nennen wir das Tupel
 $(P, B)$ eine affine Basis. Für jeden Punkt $Q$ gibt es dann also Skalare $\lambda_1,\hdots ,\lambda_n$ mit 
 \begin{align*}
 Q = P + \sum_{i=1}^{n} \lambda_i \cdot b_i  \; .
@@ -613,9 +613,9 @@ Eine Affine Abbildung
 \phi &: \mathbb{A}^n \to \mathbb{A}^n \\
 \phi(P) & := A \cdot P + t
 \end{align*} 
-ist genau dann invertierter, falls $\det(A) \neq 0$ ist und die Inverse Abbildung ist dann
+ist genau dann invertierbar, falls $\det(A) \neq 0$ ist und die Inverse Abbildung ist dann
 \begin{align*}
-\phi^{-1} &: \mathbb{A} \to \mathbb{A} \\
+\phi^{-1} &: \mathbb{A}^n \to \mathbb{A}^n \\
 \phi^{-1}(P) & := A^{-1} \cdot P - A^{-1} \cdot t \; .
 \end{align*} 
 \end{Bemerkung}
@@ -642,7 +642,7 @@ mit $\theta_{(P,B)}^{(P',B')} (Q) :=   \theta_{(P',B')} \biggl ( \theta_{(P,B)}^
 \begin{Definition}
 Der Abstand von  $P,Q \in \mathbb{A}$  ist definiert durch
 \begin{align*}
-d : \mathbb{A} \times \mathbb{A} \to \mathbb{R} \\
+d : \mathbb{A}^n \times \mathbb{A}^n \to \mathbb{R} \\
 d(P,Q) := || \overline{PQ} || \; .
 \end{align*}
 \end{Definition}
